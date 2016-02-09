@@ -43,8 +43,7 @@ public class GuestUserAuthPlugin implements GoPlugin {
     @Override
     public void initializeGoApplicationAccessor(GoApplicationAccessor goApplicationAccessor) {
         /* This call happens too late for the handlers to be given the accessor. So, give them a
-         * wrapper instead (earlier, in constructor) and fill up the wrapper with the accessor now.
-         */
+         * wrapper instead (earlier, in constructor) and fill up the wrapper with the accessor now. */
         accessorWrapper.holdOnTo(goApplicationAccessor);
     }
 

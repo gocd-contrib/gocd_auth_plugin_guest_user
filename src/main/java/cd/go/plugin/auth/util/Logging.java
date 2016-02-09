@@ -5,7 +5,7 @@ import com.thoughtworks.go.plugin.api.logging.Logger;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class Logging {
-    private static final Logger logger = Logger.getLoggerFor(GuestUserAuthPlugin.class);
+    private static final Logger logger = Logger.getLoggerFor(Logging.class);
 
     public static <RequestType, ReturnType> ReturnType withLogging(String messagePrefix, RequestType request, Action<RequestType, ReturnType> action) {
         String stringRepresentationOfRequest = ToStringBuilder.reflectionToString(request);
