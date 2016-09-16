@@ -27,7 +27,7 @@ public class PluginConfigurationHandler implements Handler {
     }
 
     private String getImage() {
-        String imageLocation = "/login_as_guest.png";
+        String imageLocation = "/guest.png";
         try {
             return "data:image/png;base64," + Base64.encodeBase64String(IOUtils.toByteArray(getClass().getResourceAsStream(imageLocation)));
         } catch (Exception e) {
