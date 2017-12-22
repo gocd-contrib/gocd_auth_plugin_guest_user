@@ -2,9 +2,7 @@
 
 Allows users to login as a guest to a [GoCD](https://www.go.cd) server.
 
-# Status
-
-* This should be usable.
+> ### **Warning**: [GoCD Auth Plugin](https://github.com/gocd-contrib/gocd_auth_plugin_guest_user) uses authentication enpoint. As of GoCD release `17.5.0`, authentication plugin endpoints have been deprecated, and will be removed in GoCD release `18.1.0`. [GoCD Auth Plugin](https://github.com/gocd-contrib/gocd_auth_plugin_guest_user) will not work for GoCD versions `18.1.0` and above. Users are expected to use [GoCD Guest Login Plugin](https://github.com/gocd-contrib/guest-login-plugin) instead.
 
 # Installation
 
